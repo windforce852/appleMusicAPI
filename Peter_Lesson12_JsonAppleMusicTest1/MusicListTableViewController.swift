@@ -16,7 +16,7 @@ class MusicListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchData()
+//        fetchData()
     }
 
     func fetchData(){
