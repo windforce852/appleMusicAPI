@@ -17,6 +17,7 @@
 		22BFED6E2811A1290019EFEE /* MusicListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFED6D2811A1290019EFEE /* MusicListTableViewController.swift */; };
 		22BFED702811A9120019EFEE /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFED6F2811A9120019EFEE /* MusicTableViewCell.swift */; };
 		22BFED732811AC5F0019EFEE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 22BFED722811AC5F0019EFEE /* Kingfisher */; };
+		22BFED992813B58C0019EFEE /* MusicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFED982813B58C0019EFEE /* MusicDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		22AC1E7028119C5300931BEA /* songModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = songModel.swift; sourceTree = "<group>"; };
 		22BFED6D2811A1290019EFEE /* MusicListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListTableViewController.swift; sourceTree = "<group>"; };
 		22BFED6F2811A9120019EFEE /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		22BFED982813B58C0019EFEE /* MusicDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				22AC1E7028119C5300931BEA /* songModel.swift */,
 				22AC1E6028105E7A00931BEA /* ViewController.swift */,
 				22BFED6D2811A1290019EFEE /* MusicListTableViewController.swift */,
+				22BFED982813B58C0019EFEE /* MusicDetailViewController.swift */,
 				22BFED6F2811A9120019EFEE /* MusicTableViewCell.swift */,
 				22AC1E6228105E7A00931BEA /* Main.storyboard */,
 				22AC1E6528105E7B00931BEA /* Assets.xcassets */,
@@ -158,6 +161,7 @@
 				22AC1E6128105E7A00931BEA /* ViewController.swift in Sources */,
 				22AC1E5D28105E7A00931BEA /* AppDelegate.swift in Sources */,
 				22AC1E7128119C5300931BEA /* songModel.swift in Sources */,
+				22BFED992813B58C0019EFEE /* MusicDetailViewController.swift in Sources */,
 				22BFED6E2811A1290019EFEE /* MusicListTableViewController.swift in Sources */,
 				22AC1E5F28105E7A00931BEA /* SceneDelegate.swift in Sources */,
 				22BFED702811A9120019EFEE /* MusicTableViewCell.swift in Sources */,

@@ -27,9 +27,6 @@ class ViewController: UIViewController {
     
     @IBSegueAction func sendSearching(_ coder: NSCoder) -> MusicListTableViewController? {
         let controller = MusicListTableViewController(coder: coder)
-//        if let keyword = textField1.text{
-//            controller?.keyword = keyword
-//        }
         controller?.items = items
         return controller
     }

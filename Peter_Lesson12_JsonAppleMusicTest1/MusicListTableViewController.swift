@@ -16,42 +16,19 @@ class MusicListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        fetchData()
     }
-
-    func fetchData(){
-//        let urlString = "https://itunes.apple.com/search?term=Kazuyoshisaito&media=music&country=tw"
-        let urlString = "https://itunes.apple.com/search?term=\(keyword)&media=music&country=tw"
-        if let url = URL(string: urlString){
-            URLSession.shared.dataTask(with: url) { data, response, error in
-                if let data = data{
-                    let decoder = JSONDecoder()
-                    do{
-                        let musicApiResponse = try decoder.decode(musicApiResponse.self, from: data)
-                        self.items = musicApiResponse.results
-                        print(self.items)
-                        DispatchQueue.main.async {
-                            self.tableView.reloadData()
-                        }
-                    } catch {
-                        print(error)
-                    }
-                } else {
-                    print("fetch item error")
-                }
-            }.resume()
+    
+    @IBSegueAction func goToDetailPage(_ coder: NSCoder) -> MusicDetailViewController? {
+        if let row = tableView.indexPathForSelectedRow?.row {
+            return MusicDetailViewController(coder: coder, item: items[row])
+        } else {
+            return nil
         }
     }
     
+
     // MARK: - Table view data source
-
-//    REMEMBER TO HIDE THIS
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        return 0
-//    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return items.count
     }
 
@@ -68,6 +45,10 @@ class MusicListTableViewController: UITableViewController {
         return cell
     }
     
+    //    REMEMBER TO HIDE THIS
+    //    override func numberOfSections(in tableView: UITableView) -> Int {
+    //        return 0
+    //    }
 
     /*
     // Override to support conditional editing of the table view.
